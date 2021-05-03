@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6bec3b5495.js" crossorigin="anonymous"></script>
     <title>Tailwind CSS Demo</title>
 </head>
 <body>
-
+    <nav class="py-1 border-b-4 border-gray-700">
+        <div>
+            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
+            <a href="#Prestations" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Prestations</a>
+            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
+        </div>
+        <div class="sm:hidden" id="mobile-menu">
+            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
+            <a href="#Prestations" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Prestations</a>
+            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
+        </div>
+    </nav>
+    <div class="" id="Prestations">
+        <h2 class="py-1 w-min border-b-4 border-red-500 text-xl uppercase font-bold ">Prestations</h2>
+        <div class="m-5 grid grid-cols-3 gap-5 justify-items-center">
+            <div class="cards text-center"><i class="fas fa-hands m-2 text-4xl"></i>Communication et Relation à l'autre</div>
+            <div class="cards text-center"><i class="fas fa-home m-2 text-4xl"></i>Apprentissage de la Vie Quotidienne</div>
+            <div class="cards text-center"><i class="fas fa-hands-helping m-2 text-4xl"></i>Soutien et Guidance aux proches</div>
+            <div class="cards text-center"><i class="fas fa-pencil-alt m-2 text-4xl"></i>Accompagnement Scolaire</div>
+            <div class="cards text-center"><i class="fas fa-tasks m-2 text-4xl"></i>Hand-sitting : Garde d'enfants</div>
+            <div class="cards text-center"><i class="fas fa-hand-holding-heart m-2 text-4xl"></i>Aide liée à la difficulté du patient</div>
+        </div>
+    </div>
 </body>
 </html>
