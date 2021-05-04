@@ -7,35 +7,77 @@
     <script src="https://kit.fontawesome.com/6bec3b5495.js" crossorigin="anonymous"></script>
     <title>Tailwind CSS Demo</title>
 </head>
-<body>
-    <nav class="py-1 border-b-4 border-gray-700">
+<body class="bg-gray-100">
+    <nav class="py-1 border-b-4 border-gray-700 ">
         <div>
-            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
-            <a href="#Prestations" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Prestations</a>
-            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
-        </div>
-        <div class="sm:hidden" id="mobile-menu">
-            <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
+            <a href="#Apropos" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
             <a href="#Prestations" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Prestations</a>
             <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
         </div>
     </nav>
+    <div id="Apropos">
+        <h2 class="py-1 text-xl uppercase font-bold ">A propos de moi</h2>
+        
+    </div>
     <div class="" id="Prestations">
-        <h2 class="py-1 w-min border-b-4 border-red-500 text-xl uppercase font-bold ">Prestations</h2>
-        <div class="m-5 grid grid-cols-3 gap-5">
-            <div class="flex rounded border-2 border-red-500">
-                <div class="flex flex-col justify-center"><i class="fas fa-hands m-2 text-5xl bg-red-500 rounded-full text-white p-6"></i></div>
-                <div class="flex flex-col ml-3">
-                    <div class="">Communication et Relation à l'autre</div>
-                    <div class="text-sm">Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto repudiandae odio harum esse quibusdam fuga voluptas iure sit, quos recusandae ratione consequuntur, itaque illum sapiente dolore fugiat delectus inventore!</div></div>
+        <h2 class="py-1 my-5 w-min border-b-4 border-vert text-xl uppercase font-bold ">Prestations</h2>
+        <div class="m-5 lg:grid lg:grid-cols-3 lg:gap-5">
+            
+            <!-- Card 1 -->
+            <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
+                <div class="flex justify-center lg:justify-start -mt-16">
+                        <span class="icon-bubble"><i class="fas fa-hands"></i></span>
                 </div>
+                <div>
+                    <div class="text-gray-800 text-3xl font-semibold">Communication et Relation à l'autre</div>
+                    <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
+                </div>
+            </div>
 
-            <div class="cards"><i class="fas fa-home m-2 text-4xl"></i><div class="w-full text-center">Apprentissage de la Vie Quotidienne</div></div>
-            <div class="cards text-center"><i class="fas fa-hands-helping m-2 text-4xl"></i><div class="ml-3">Soutien et Guidance aux proches</div></div>
-            <div class="cards text-center"><i class="fas fa-pencil-alt m-2 text-4xl"></i><div class="ml-3">Accompagnement Scolaire</div></div>
-            <div class="cards text-center"><i class="fas fa-tasks m-2 text-4xl"></i><div class="ml-3">Hand-sitting : Garde d'enfants</div></div>
-            <div class="cards text-center"><i class="fas fa-hand-holding-heart m-2 text-4xl"></i><div class="ml-3">Aide Personalisée</div></div>
+            <!-- Card 2 -->
+            <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
+                <div class="flex justify-center lg:justify-start -mt-16">
+                        <span class="icon-bubble"><i class="fas fa-home"></i></span>
+                </div>
+                <div>
+                    <div class="text-gray-800 text-3xl font-semibold">Apprentissage de la Vie Quotidienne</div>
+                    <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
+                </div>
+            </div>
+
+            <!-- Card 3  -->
+            <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
+                <div class="flex justify-center lg:justify-start -mt-16">
+                        <span class="icon-bubble"><i class="fas fa-hands-helping"></i></span>
+                </div>
+                <div>
+                    <div class="text-gray-800 text-3xl font-semibold">Soutien et Guidance aux proches</div>
+                    <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
+                <div class="flex justify-center lg:justify-start -mt-16">
+                        <span class="icon-bubble"><i class="fas fa-tasks"></i></span>
+                </div>
+                <div>
+                    <div class="text-gray-800 text-3xl font-semibold">Hand-sitting : Garde d'enfants</div>
+                    <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
+                </div>
+            </div>
+
+            <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
+                <div class="flex justify-center lg:justify-start -mt-16">
+                        <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
+                </div>
+                <div>
+                    <div class="text-gray-800 text-3xl font-semibold">Aide Personalisée</div>
+                    <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
+                </div>
+            </div>
         </div>
+        
     </div>
 </body>
 </html>
