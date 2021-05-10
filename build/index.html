@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/6bec3b5495.js" crossorigin="anonymous"></script>
-    <title>Tailwind CSS Demo</title>
+    <title>Nathalie Saint-Charles</title>
 </head>
 <body class="bg-gray-100">
     <!-- NAV BAR -->
@@ -16,13 +16,36 @@
             <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
         </div>
     </nav>
+    
+    <nav class="sm:hidden relative">
+        <!-- Hamburger -->
+        <div class="absolute cursor-pointer right-2 top-6 z-20 rounded" id="hamburger">
+            <div class="w-8 h-1 bg-red-700 m-1"></div>
+            <div class="w-8 h-1 bg-red-700 m-1"></div>
+            <div class="w-8 h-1 bg-red-700 m-1"></div>
+        </div>
 
-    <nav class="sm:hidden absolute h-full w-full flex flex-col justify-around items-stretch bg-gray-600">
-        <a class="flex justify-center h-full bg-gray-700 hover:text-white px-5 py-2 font-medium text-2xl" href="#Apropos">A propos</a>
-        <a class="flex justify-center h-full hover:bg-gray-700 hover:text-white px-5 py-2 font-medium text-2xl" href="#Prestations">Prestations</a>
-        <a class="flex justify-center h-full hover:bg-gray-700 hover:text-white px-5 py-2 font-medium text-2xl" href="#"><div class="">Contact</div></a>
+        <!-- Links -->
+        <div class="hidden fixed h-screen w-full flex flex-col justify-around items-center bg-gray-600" id="navMobileMenu">
+            <a class="hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#Apropos">A propos</a>
+            <a class="hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#Prestations">Prestations</a>
+            <a class="hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#"><div class="">Contact</div></a>
+        </div>
     </nav>
-
+    
+    <!-- <nav class="sm:hidden fixed h-screen w-full flex flex-col bg-gray-600">
+        
+        <div class="absolute cursor-pointer right-2 top-6">
+            <span class="w-8 h-1 bg-black m-1"></span>
+            <span class="w-8 h-1 bg-black m-1"></span>
+            <span class="w-8 h-1 bg-black m-1"></span>
+        </div>
+        
+        <a class="h-full bg-gray-700 hover:text-white font-medium text-2xl" href="#Apropos">A propos</a>
+        <a class="h-full hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#Prestations">Prestations</a>
+        <a class="h-full hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#">Contact</a>
+    </nav> -->
+    
     <div id="Apropos">
         <h2 class="py-1 text-xl uppercase font-bold ">A propos de moi</h2>
         
@@ -34,50 +57,50 @@
             <!-- Card 1 -->
             <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
                 <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hands"></i></span>
+                    <span class="icon-bubble"><i class="fas fa-hands"></i></span>
                 </div>
                 <div>
                     <div class="text-gray-800 text-3xl font-semibold">Communication et Relation à l'autre</div>
                     <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                 </div>
             </div>
-
+            
             <!-- Card 2 -->
             <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
                 <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-home"></i></span>
+                    <span class="icon-bubble"><i class="fas fa-home"></i></span>
                 </div>
                 <div>
                     <div class="text-gray-800 text-3xl font-semibold">Apprentissage de la Vie Quotidienne</div>
                     <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                 </div>
             </div>
-
+            
             <!-- Card 3  -->
             <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
                 <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hands-helping"></i></span>
+                    <span class="icon-bubble"><i class="fas fa-hands-helping"></i></span>
                 </div>
                 <div>
                     <div class="text-gray-800 text-3xl font-semibold">Soutien et Guidance aux proches</div>
                     <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                 </div>
             </div>
-
+            
             <!-- Card 4 -->
             <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
                 <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-tasks"></i></span>
+                    <span class="icon-bubble"><i class="fas fa-tasks"></i></span>
                 </div>
                 <div>
                     <div class="text-gray-800 text-3xl font-semibold">Hand-sitting : Garde d'enfants</div>
                     <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                 </div>
             </div>
-
+            
             <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
                 <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
+                    <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
                 </div>
                 <div>
                     <div class="text-gray-800 text-3xl font-semibold">Aide Personalisée</div>
@@ -85,7 +108,7 @@
                 </div>
             </div>
         </div>
-        
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
