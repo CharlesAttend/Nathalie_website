@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss css/styles.css -o build/styles.css",
-    "live" : "live-server build"
+    "live": "live-server build"
   },
   "repository": {
     "type": "git",
