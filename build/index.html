@@ -9,14 +9,15 @@
 </head>
 <body class="bg-gray-100">
     <!-- NAV BAR -->
-    <nav class="sm:contents hidden py-1 border-b-4 border-gray-700 ">
-        <div>
-            <a href="#Apropos" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
-            <a href="#Prestations" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Prestations</a>
-            <a href="#Contact" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
+    <nav class="sm:contents hidden text-2xl">
+        <div class="flex  p-4 bg-gray-500">
+            <a href="#Apropos" class="hover:bg-gray-700 hover:text-white font-medium">A propos</a>
+            <a href="#Prestations" class="hover:bg-gray-700 hover:text-white font-medium">Prestations</a>
+            <a href="#Contact" class="hover:bg-gray-700 hover:text-white font-medium">Contact</a>
         </div>
     </nav>
     
+    <!-- Responsive Nav -->
     <nav class="sm:hidden relative">
         <!-- Hamburger -->
         <div class="absolute cursor-pointer right-2 top-6 z-20 rounded" id="hamburger">
@@ -26,25 +27,28 @@
         </div>
 
         <!-- Links -->
-        <div class="hidden fixed h-screen w-full flex flex-col justify-around items-center bg-gray-600" id="navMobileMenu">
-            <a class="hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#Apropos">A propos</a>
-            <a class="hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#Prestations">Prestations</a>
-            <a class="hover:bg-gray-700 hover:text-white font-medium text-2xl" href="#"><div class="">Contact</div></a>
+        <div class="hidden fixed h-full w-full flex flex-col justify-around items-center bg-gray-600" id="navMobileMenu">
+            <a class="hover:bg-gray-700 hover:text-white font-medium text-3xl" href="#Apropos">A propos</a>
+            <a class="hover:bg-gray-700 hover:text-white font-medium text-3xl" href="#Prestations">Prestations</a>
+            <a class="hover:bg-gray-700 hover:text-white font-medium text-3xl" href="#"><div class="">Contact</div></a>
         </div>
     </nav>
     
     
     <div id="Apropos">
         <h2 class="titre">A propos de moi</h2>
-        <div class=""><img class="rounded-full " src="pp_detoure.png" alt="Nathalie Saint-Charles"></div>
-
-        <div class="bg-white border-l-4 m-5 p-1 border-bleu">
-            <div class="text-gray-800 text-xl font-semibold">Educatrice spécialisée depuis 25 ans. </div>
+        <div class="flex justify-between items-center">
+            <div class="bg-white border-l-4 m-5 p-1 border-bleu h-min ">
+                <div class="text-gray-800 text-xl font-semibold">Educatrice spécialisée depuis 25 ans. </div>
                 <ul class="list-disc list-inside text-gray-600">
                     <li class="ml-4">Compétences avec les enfants et adolescents présentant des troubles du comportement.</li>
                     <li class="ml-4">Expérience avec les enfants ayant des TSAs et/ou des TEDs.</li>
                 </ul>
             </div>
+            
+            <img class="sm:w-1/4 rounded-full " src="pp_detoure.png" alt="Nathalie Saint-Charles">
+        </div>
+        
         </div>
     </div>
     <div class="" id="Prestations">
@@ -124,7 +128,7 @@
                     <div class="mt-2 text-gray-600">On peut toujours en parler !<br>
                         <a href="#Contact">
                             <div class="inline-block mr-2 mt-2">
-                                <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-blue-500 hover:bg-blue-600 hover:shadow-lg flex items-center">
+                                <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 font-semibold rounded-md bg-gray-700 hover:bg-blue-600 hover:shadow-lg flex items-center">
                                     <i class="far fa-comment-dots mr-1"></i> 
                                     Contactez moi 
                                 </button>

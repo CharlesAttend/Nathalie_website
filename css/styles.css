@@ -7,5 +7,5 @@
 }
 
 .titre {
-    @apply py-1 my-5 w-max border-b-8 border-vert text-3xl uppercase font-bold 
+    @apply py-1 my-5 mt-0 w-max border-b-8 border-vert text-3xl uppercase font-bold 
 }
