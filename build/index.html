@@ -8,13 +8,21 @@
     <title>Tailwind CSS Demo</title>
 </head>
 <body class="bg-gray-100">
-    <nav class="py-1 border-b-4 border-gray-700 ">
+    <!-- NAV BAR -->
+    <nav class="sm:contents hidden py-1 border-b-4 border-gray-700 ">
         <div>
             <a href="#Apropos" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">A propos</a>
             <a href="#Prestations" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Prestations</a>
             <a href="#" class="hover:bg-gray-700 hover:text-white px-5 py-2 font-medium">Contact</a>
         </div>
     </nav>
+
+    <nav class="sm:hidden absolute h-full w-full flex flex-col justify-around items-stretch bg-gray-600">
+        <a class="flex justify-center h-full bg-gray-700 hover:text-white px-5 py-2 font-medium text-2xl" href="#Apropos">A propos</a>
+        <a class="flex justify-center h-full hover:bg-gray-700 hover:text-white px-5 py-2 font-medium text-2xl" href="#Prestations">Prestations</a>
+        <a class="flex justify-center h-full hover:bg-gray-700 hover:text-white px-5 py-2 font-medium text-2xl" href="#"><div class="">Contact</div></a>
+    </nav>
+
     <div id="Apropos">
         <h2 class="py-1 text-xl uppercase font-bold ">A propos de moi</h2>
         
