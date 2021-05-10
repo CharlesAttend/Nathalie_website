@@ -32201,6 +32201,23 @@ video {
   width: 5rem
 }
 
+.titre {
+  --tw-border-opacity: 1;
+  border-color: rgba(194, 218, 116, var(--tw-border-opacity));
+  border-bottom-width: 8px;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
