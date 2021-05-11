@@ -36,17 +36,32 @@
     
     
     <div id="Apropos">
-        <h2 class="titre">A propos de moi</h2>
-        <div class="flex justify-between items-center">
-            <div class="bg-white border-l-4 m-5 p-1 border-bleu h-min ">
-                <div class="text-gray-800 text-xl font-semibold">Educatrice spécialisée depuis 25 ans. </div>
-                <ul class="list-disc list-inside text-gray-600">
-                    <li class="ml-4">Compétences avec les enfants et adolescents présentant des troubles du comportement.</li>
-                    <li class="ml-4">Expérience avec les enfants ayant des TSAs et/ou des TEDs.</li>
-                </ul>
+        <h2 class="titre">A propos</h2>
+        <div class="flex flex-col justify-center lg:flex-row lg:justify-start"> <!-- pas sur que ça soit nécéssarie -->
+
+            <div class="flex flex-col justify-center items-center lg:hidden">
+                <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white " src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
+                <div class="w-1/4 h-1 bg-bleu"></div>
+            </div>
+            <!-- <div class="flex jusktify-center"><div class="w-1/4 h-2 bg-bleu"></div></div> -->
+
+            <!-- Card -->
+            <div class="bg-white m-5 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center ">
+                <div>
+                    <div class="text-gray-800 text-xl font-semibold">Educatrice spécialisée depuis 25 ans. </div>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li class="ml-4">Compétences avec les enfants et adolescents présentant des troubles du comportement.</li>
+                        <li class="ml-4">Expérience avec les enfants ayant des TSAs et/ou des TEDs.</li>
+                    </ul>
+                    Maybe add more text
+                </div>
             </div>
             
-            <img class="sm:w-1/4 rounded-full " src="pp_detoure.png" alt="Nathalie Saint-Charles">
+            <!-- Photo big screen -->
+            <div class="hidden lg:flex justify-center items-center">
+                <div class="w-1 h-56 bg-bleu"></div>
+                <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white " src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
+            </div>
         </div>
         
         </div>
