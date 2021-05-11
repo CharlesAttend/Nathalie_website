@@ -9,11 +9,15 @@
 </head>
 <body class="bg-gray-100">
     <!-- NAV BAR -->
-    <nav class="sm:contents hidden text-2xl">
-        <div class="flex  p-4 bg-gray-500">
-            <a href="#Apropos" class="hover:bg-gray-700 hover:text-white font-medium">A propos</a>
-            <a href="#Prestations" class="hover:bg-gray-700 hover:text-white font-medium">Prestations</a>
-            <a href="#Contact" class="hover:bg-gray-700 hover:text-white font-medium">Contact</a>
+    <nav class="text-2xl w-full bg-white flex justify-between shadow-lg">
+        <div class="flex justify-around items-center font-medium">
+            Consultante Educative
+        </div>
+
+        <div class="sm:flex hidden justify-around items-center w-1/2 h-16 ml-full px-2">
+            <a href="#Apropos" class="p-4 hover:bg-gray-200 font-medium"><span>A propos</span></a>
+            <a href="#Prestations" class="p-4 hover:bg-gray-200  font-medium">Prestations</a>
+            <a href="#Contact" class="p-4 hover:bg-gray-200  font-medium">Contact</a>
         </div>
     </nav>
     
@@ -40,13 +44,13 @@
         <div class="flex flex-col justify-center lg:flex-row lg:justify-start"> <!-- pas sur que ça soit nécéssarie -->
 
             <div class="flex flex-col justify-center items-center lg:hidden">
-                <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white " src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
+                <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white shadow-lg" src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
                 <div class="w-1/4 h-1 bg-bleu"></div>
             </div>
             <!-- <div class="flex jusktify-center"><div class="w-1/4 h-2 bg-bleu"></div></div> -->
 
             <!-- Card -->
-            <div class="bg-white m-5 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center ">
+            <div class="bg-white m-5 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg">
                 <div>
                     <div class="text-gray-800 text-xl font-semibold">Educatrice spécialisée depuis 25 ans. </div>
                     <ul class="list-disc list-inside text-gray-600">
@@ -60,12 +64,13 @@
             <!-- Photo big screen -->
             <div class="hidden lg:flex justify-center items-center">
                 <div class="w-1 h-56 bg-bleu"></div>
-                <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white " src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
+                <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white shadow-lg" src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
             </div>
         </div>
         
         </div>
     </div>
+
     <div class="" id="Prestations">
         <h2 class="titre">Prestations</h2>
         <div class="m-5 lg:grid lg:grid-cols-3 lg:gap-5">
@@ -154,6 +159,7 @@
             </div>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
