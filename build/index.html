@@ -9,27 +9,29 @@
     <title>Nathalie Saint-Charles</title>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 text-gray-800">
     <!-- NAV BAR -->
     <nav class="hidden lg:flex text-2xl w-full bg-white justify-between shadow-lg">
         <div class="flex justify-around items-center font-medium px-5">
+            <img class="w-24 mx-4" src="hand.png" alt="hand olding">
             Consultante Educative
         </div>
-
+        
         <div class="sm:flex  justify-around items-center w-1/2 h-16 ml-full px-2">
             <a href="#Apropos" class="p-4 hover:bg-gray-200 font-medium"><span>A propos</span></a>
             <a href="#Prestations" class="p-4 hover:bg-gray-200  font-medium">Prestations</a>
             <a href="#Contact" class="p-4 hover:bg-gray-200  font-medium">Contact</a>
         </div>
     </nav>
-
+    
     <!-- Responsive Nav -->
     <nav class="fixed lg:hidden text-2xl w-full bg-white shadow-lg py-2 z-20">
         <div class="flex justify-between items-center font-medium px-5">
+            <img class="w-24 mx-4" src="hand.png" alt="hand olding">
             <div>Consultante Educative</div>
 
             <!-- Hamburger -->
-            <div class="cursor-pointer" id="hamburger">
+            <div class="cursor-pointer p-2" id="hamburger">
                 <div class="w-8 h-1 bg-red-700 m-1"></div>
                 <div class="w-8 h-1 bg-red-700 m-1"></div>
                 <div class="w-8 h-1 bg-red-700 m-1"></div>
@@ -44,7 +46,10 @@
         </div>
     </nav>
 
-    <div class="p-5 pt-14">
+    <div class="p-3 lg:p-5 pt-14 lg:pt-5">
+
+
+
         <div id="Apropos">
             <h2 class="titre">Qui suis-je ?</h2>
             <div class="flex flex-col justify-center lg:flex-row lg:justify-start">
@@ -55,19 +60,19 @@
                         src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
                     <div class="w-1/4 h-1 bg-bleu"></div>
                 </div>
-                <!-- <div class="flex jusktify-center"><div class="w-1/4 h-2 bg-bleu"></div></div> -->
 
                 <!-- Card -->
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg">
+                <div class="bg-white lg:w-1/2 lg:m-4 p-1 border-l-4 border-bleu lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Educatrice spécialisée depuis 25 ans. </div>
-                        <ul class="list-disc list-inside text-gray-600">
-                            <li class="ml-4">Compétences avec les enfants et adolescents présentant des troubles du
-                                comportement.</li>
-                            <li class="ml-4">Expérience avec les enfants ayant des TSAs et/ou des TEDs.</li>
+                        <div class="text-gray-800 text-xl font-semibold flex items-center justify-center flex-col">
+                            <span>Nathalies Saint-Charles</span>
+                            <span>Consultante éducative à domicile</span>
+                            <span>(Diplomée Educatrice Spécialisée)</span>
+                        </div>
+                        <ul class="list-disc list-inside mx-10 text-lg">
+                            <li class="ml-4">Expérience dans l’accompagnement des parents et de leur enfant présentant des troubles du comportement (SESSAD).</li>
+                            <li class="ml-4">Compétences en pédopsychiatrie (hôpital de jour) accueillant des enfants âgés de 3 à 12 ans autistes, TSA et/ou TED.</li>
                         </ul>
-                        Maybe add more text
                     </div>
                 </div>
 
@@ -77,12 +82,13 @@
                     <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white shadow-lg"
                         src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
                 </div>
+
             </div>
         </div>
 
         <div class="" id="Prestations">
             <h2 class="titre ">Prestations</h2>
-            <div class="m-5 pt-3 lg:grid lg:grid-cols-3 lg:gap-5">
+            <div class="lg:m-1 lg:pt-8 lg:grid lg:grid-cols-3 lg:gap-5">
 
                 <!-- Card 1 -->
                 <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
@@ -90,8 +96,8 @@
                         <span class="icon-bubble"><i class="fas fa-hands"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Communication et Relation à l'autre</div>
-                        <div class="mt-2 text-gray-600">Vous rencontrez des problèmes de communication avec votre enfant
+                        <div class="text-xl font-semibold">Communication et Relation à l'autre</div>
+                        <div class="mt-2 ">Vous rencontrez des problèmes de communication avec votre enfant
                             adolescents ? <br>
                             Vous avez l'impression de ne plus vous comprendre ? <br>
                             Ce qui s'exprime entre vous verbalement vous fait ressentir généralement colère et tension ?
@@ -108,8 +114,8 @@
                         <span class="icon-bubble"><i class="fas fa-home"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Apprentissage de la Vie Quotidienne</div>
-                        <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        <div class="text-xl font-semibold">Apprentissage de la Vie Quotidienne</div>
+                        <div class="mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                             eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam
                             suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                     </div>
@@ -121,8 +127,8 @@
                         <span class="icon-bubble"><i class="fas fa-hands-helping"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Soutien et Guidance aux proches</div>
-                        <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        <div class="text-xl font-semibold">Soutien et Guidance aux proches</div>
+                        <div class="mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                             eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam
                             suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                     </div>
@@ -134,8 +140,8 @@
                         <span class="icon-bubble"><i class="fas fa-tasks"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Hand-sitting : Garde d'enfants</div>
-                        <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        <div class="text-xl font-semibold">Hand-sitting : Garde d'enfants</div>
+                        <div class="mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                             eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam
                             suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                     </div>
@@ -146,8 +152,8 @@
                         <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Aide Personalisée</div>
-                        <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        <div class="text-xl font-semibold">Aide Personalisée</div>
+                        <div class="mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                             eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam
                             suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                     </div>
@@ -158,8 +164,8 @@
                         <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Aide Personalisée</div>
-                        <div class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        <div class="text-xl font-semibold">Aide Personalisée</div>
+                        <div class="mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
                             eum, quae aliquam velit unde doloribus corporis cumque reprehenderit natus quos numquam
                             suscipit, dolore incidunt ratione beatae ex illum itaque aut!</div>
                     </div>
@@ -170,8 +176,8 @@
                         <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
                     </div>
                     <div>
-                        <div class="text-gray-800 text-xl font-semibold">Il manque quelque chose ? Un doute ?</div>
-                        <div class="mt-2 text-gray-600 flex justify-between items-center">On peut toujours en parler !
+                        <div class="text-xl font-semibold">Il manque quelque chose ? Un doute ?</div>
+                        <div class="mt-2  flex justify-between items-center">On peut toujours en parler !
                             <a href="#Contact">
                                 <button type="button" class="button">
                                     <i class="far fa-comment-dots mr-1"></i>
@@ -184,15 +190,45 @@
             </div>
         </div>
 
+        <div id="Paiement">
+            <div class="titre">Paiement</div>
+            <div class="flex">
+                <div class="flex flex-col justify-evenly">
+                    <!-- CARD -->
+                    <div class="bg-white lg:w-full p-1 border-l-4 border-bleu lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
+                        <div>
+                            <div class="text-xl">
+                                Possibilité de paiement par :
+                            </div>
+                            <ul class="list-disc list-inside mx-10 text-lg">
+                                <li>CESV (Chèque Emploi Service Universel)</li>
+                                <li>Possibilité de crédit ou réduction d’impôt</li>
+                                <li>Chèque - Espèce</li>
+                                <li>Possibilité d’aide financée par la</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Card2 -->
+                    <div class="bg-white lg:w-full  p-1 border-l-4 border-bleu lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
+                        <div class="text-lg">
+                            Uniquement sur RDV à domicile sur le secteur Sambre Avesnois et Valenciennois du lundi au Samedi.
+                        </div>
+                    </div>
+                </div>
+                <img class="w-1/3 mx-20" src="family.png" alt="familly">
+            </div>
+        </div>
+
+
         <div id="Contact">
             <div class="titre">Contactez moi</div>
-
-            <div class="lg:grid lg:grid-cols-3">
+ 
+            <div class="lg:grid lg:grid-cols-3 text-lg">
                 <!-- TELEPHONE -->
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg">
+                <div class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
                     <div class="m-4 text-xl flex items-center">
-                        <span class="text-bleu text-5xl mx-2"><i class="fas fa-phone-square-alt"></i></span>
+                        <span class="text-vert text-5xl mx-2"><i class="fas fa-phone-square-alt"></i></span>
                         <span>Par téléphone: <a class="border-b-2 border-dashed" href="tel:+336-19-43-09-69">+33
                                 6-19-43-09-69</a></span>
                         <button type="button" class="button" id="clip">
@@ -203,7 +239,7 @@
 
                 <!-- MAIL -->
                 <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg">
+                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
                     <div class="m-4 text-xl flex items-center">
                         <span class="text-vert text-5xl mx-2"><i class="fas fa-envelope-square"></i></span>
                         <div>Par mail: <a class="border-b-2 border-dashed"
@@ -217,7 +253,7 @@
 
                 <!-- MESSENGER -->
                 <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg">
+                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
                     <div class="m-4 text-xl flex items-center">
                         <span class="text-vert text-5xl mx-2"><i class="fab fa-facebook-messenger"></i></span>
                         <div>Sur Messenger</div>
