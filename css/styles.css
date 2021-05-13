@@ -11,5 +11,5 @@
 }
 
 .button{
-    @apply ml-auto w-min h-min focus:outline-none text-white text-sm py-2.5 px-5 font-semibold rounded-md bg-gray-700 hover:bg-blue-600 hover:shadow-lg flex items-center
+    @apply ml-auto focus:outline-none text-white text-sm py-2.5 px-5 font-semibold rounded-md bg-gray-700 hover:bg-blue-600 hover:shadow-lg flex items-center
 }
