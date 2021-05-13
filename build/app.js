@@ -14,14 +14,14 @@ navMobileMenuLinks.forEach((link) => {
     });
 });
 
-clip.forEach( (button) => {
+clip.forEach((button) => {
     button.addEventListener("click", () => {
         const clip = button.parentElement.querySelector("a").innerText;
         const icon = button.firstElementChild
         navigator.clipboard.writeText(clip).then(() => {
             icon.classList.value = "fas fa-clipboard-check";
-          }, () => {
+        }, () => {
             icon.classList.value = "fas fa-times text-red-600";
-          });
+        });
     });
 });
