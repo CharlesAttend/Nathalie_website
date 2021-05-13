@@ -1,10 +1,17 @@
 const nav = document.querySelector("#navMobileMenu");
 const hamburger = document.querySelector("#hamburger");
+const navMobileMenuLinks = document.querySelectorAll("#navMobileMenu a");
 
 const clip = document.querySelectorAll("#clip")
 
 hamburger.addEventListener("click", () => {
     nav.classList.toggle("hidden");
+});
+
+navMobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        nav.classList.toggle("hidden");
+    });
 });
 
 clip.forEach( (button) => {
@@ -16,5 +23,5 @@ clip.forEach( (button) => {
           }, () => {
             icon.classList.value = "fas fa-times text-red-600";
           });
-    })
+    });
 });
