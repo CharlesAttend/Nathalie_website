@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .icon-bubble {
     @apply flex justify-center rounded-full bg-bleu w-20 h-20 object-cover m-2 p-4 text-white text-5xl
 }

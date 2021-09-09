@@ -32183,6 +32183,10 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .icon-bubble {
   --tw-bg-opacity: 1;
   background-color: rgba(139, 211, 219, var(--tw-bg-opacity));
