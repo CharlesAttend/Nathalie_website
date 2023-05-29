@@ -595,6 +595,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -718,6 +723,14 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
 }
 
 .rounded-full {
@@ -855,6 +868,10 @@ video {
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-center {
@@ -1074,6 +1091,10 @@ strong {
     display: none;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1084,6 +1105,10 @@ strong {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .lg\:grid-cols-3 {
