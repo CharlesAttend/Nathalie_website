@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
-  content: ["./src/**/*.{html,js}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./dist/index.html"],
   theme: {
     extend: {
       colors: {
@@ -10,9 +8,6 @@ module.exports = {
         "bleu" : "#8BD3DB"
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }
