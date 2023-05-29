@@ -1,301 +1,425 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <script src="https://kit.fontawesome.com/6bec3b5495.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/6bec3b5495.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Nathalie Saint-Charles</title>
-</head>
+  </head>
 
-
-
-<body class="bg-gray-100 text-gray-800">
+  <body class="bg-gray-100 text-gray-800">
     <!-- NAV BAR -->
-    <nav class="hidden lg:flex text-xl w-full bg-gray-800 text-white justify-between shadow-lg">
-        <div class="flex justify-around items-center font-medium px-5">
-            <img class="w-24 mx-4" src="hand.png" alt="hand holding">
-            Consultante Educative
-        </div>
+    <nav
+      class="hidden w-full justify-between bg-gray-800 text-xl text-white shadow-lg lg:flex"
+    >
+      <div class="flex items-center justify-around px-5 font-medium">
+        <img class="mx-4 w-24" src="hand.png" alt="hand holding" />
+        Consultante Educative
+      </div>
 
-        <div class="sm:flex  justify-around items-center w-1/2 h-16 ml-full px-2">
-            <a class="p-4 hover:bg-white hover:text-gray-800 font-medium" href="#Top">Accueil</a>
-            <a class="p-4 hover:bg-white hover:text-gray-800 font-medium" href="#Apropos">A propos</a>
-            <a class="p-4 hover:bg-white hover:text-gray-800 font-medium" href="#Prestations">Prestations</a>
-            <a class="p-4 hover:bg-white hover:text-gray-800 font-medium" href="#Deontologie">Déontologie</a>
-            <a class="p-4 hover:bg-white hover:text-gray-800 font-medium" href="#Paiement">Paiement</a>
-            <a class="p-4 hover:bg-white hover:text-gray-800 font-medium" href="#Contact">Contact</a>
-        </div>
+      <div class="ml-full h-16 w-1/2 items-center justify-around px-2 sm:flex">
+        <a
+          class="p-4 font-medium hover:bg-white hover:text-gray-800"
+          href="#Top"
+          >Accueil</a
+        >
+        <a
+          class="p-4 font-medium hover:bg-white hover:text-gray-800"
+          href="#Apropos"
+          >A propos</a
+        >
+        <a
+          class="p-4 font-medium hover:bg-white hover:text-gray-800"
+          href="#Prestations"
+          >Prestations</a
+        >
+        <a
+          class="p-4 font-medium hover:bg-white hover:text-gray-800"
+          href="#Deontologie"
+          >Déontologie</a
+        >
+        <a
+          class="p-4 font-medium hover:bg-white hover:text-gray-800"
+          href="#Paiement"
+          >Paiement</a
+        >
+        <a
+          class="p-4 font-medium hover:bg-white hover:text-gray-800"
+          href="#Contact"
+          >Contact</a
+        >
+      </div>
     </nav>
 
     <!-- Responsive Nav -->
-    <nav class="fixed lg:hidden text-lg w-full bg-white shadow-lg py-2 z-20">
-        <div class="flex justify-evenly items-center font-medium px-2">
-            <img class="w-20 mx-1" src="hand.png" alt="hand holding">
+    <nav class="fixed z-20 w-full bg-white py-2 text-lg shadow-lg lg:hidden">
+      <div class="flex items-center justify-evenly px-2 font-medium">
+        <img class="mx-1 w-20" src="hand.png" alt="hand holding" />
 
-            <div>Consultante Educative</div>
+        <div>Consultante Educative</div>
 
-            <!-- Hamburger -->
-            <div class="cursor-pointer p-2" id="hamburger">
-                <div class="w-8 h-1 bg-red-700 m-1"></div>
-                <div class="w-8 h-1 bg-red-700 m-1"></div>
-                <div class="w-8 h-1 bg-red-700 m-1"></div>
-            </div>
+        <!-- Hamburger -->
+        <div class="cursor-pointer p-2" id="hamburger">
+          <div class="m-1 h-1 w-8 bg-red-700"></div>
+          <div class="m-1 h-1 w-8 bg-red-700"></div>
+          <div class="m-1 h-1 w-8 bg-red-700"></div>
         </div>
+      </div>
 
-        <!-- Links -->
-        <div class="hidden fixed h-full w-full flex flex-col justify-evenly items-center bg-white" id="navMobileMenu">
-            <a class="p-5 px-14 rounded-md bg-bleu font-medium" href="#Top">Accueil</a>
-            <a class="p-5 px-14 rounded-md bg-bleu font-medium" href="#Apropos">A propos</a>
-            <a class="p-5 px-14 rounded-md bg-bleu font-medium" href="#Prestations">Prestations</a>
-            <a class="p-5 px-14 rounded-md bg-bleu font-medium" href="#Deontologie">Déontologie</a>
-            <a class="p-5 px-14 rounded-md bg-bleu font-medium" href="#Paiement">Paiement</a>
-            <a class="p-5 px-14 rounded-md bg-bleu font-medium" href="#Contact">Contact</a>
-        </div>
+      <!-- Links -->
+      <div
+        class="fixed flex hidden h-full w-full flex-col items-center justify-evenly bg-white"
+        id="navMobileMenu"
+      >
+        <a class="rounded-md bg-bleu p-5 px-14 font-medium" href="#Top"
+          >Accueil</a
+        >
+        <a class="rounded-md bg-bleu p-5 px-14 font-medium" href="#Apropos"
+          >A propos</a
+        >
+        <a class="rounded-md bg-bleu p-5 px-14 font-medium" href="#Prestations"
+          >Prestations</a
+        >
+        <a class="rounded-md bg-bleu p-5 px-14 font-medium" href="#Deontologie"
+          >Déontologie</a
+        >
+        <a class="rounded-md bg-bleu p-5 px-14 font-medium" href="#Paiement"
+          >Paiement</a
+        >
+        <a class="rounded-md bg-bleu p-5 px-14 font-medium" href="#Contact"
+          >Contact</a
+        >
+      </div>
     </nav>
 
-    <section class="flex items-center justify-center bg-gray-800" style="height: 500px;">
-        <div class="text-center">
-            <p class="text-xl font-medium tracking-wider text-gray-200">Nathalie Saint-Charles</p>
-            <h2 class="mt-6 text-3xl font-bold text-white md:text-5xl">Consultante éducative à domicile</h2>
-    
-        </div>
+    <section
+      class="flex items-center justify-center bg-gray-800"
+      style="height: 500px"
+    >
+      <div class="text-center">
+        <p class="text-xl font-medium tracking-wider text-gray-200">
+          Nathalie Saint-Charles
+        </p>
+        <h2 class="mt-6 text-3xl font-bold text-white md:text-5xl">
+          Consultante éducative à domicile
+        </h2>
+      </div>
     </section>
 
-    <div class="p-3 lg:p-5 pt-14 lg:pt-5">
-    <!-- Debut Body -->
+    <div class="p-3 lg:p-5 lg:pt-5">
+      <!-- Debut Body -->
 
-        <div id="Top">
-            <div>
-                <div
-                class="bg-white m-4 p-1 border-4 border-vert h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                <div class=" text-xl flex justify-center items-center py-1 text-3xl uppercase font-semibold ">
-                    Premier entretien GRATUIT
-                </div>
+      <div id="Top">
+        <div>
+          <div
+            class="m-4 h-min rounded-lg border-4 border-vert bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div
+              class="flex items-center justify-center py-1 text-xl font-semibold uppercase"
+            >
+              Premier entretien GRATUIT
             </div>
+          </div>
         </div>
-        
+
         <div class="lg:flex">
-            <!-- Card -->
-            <div class="bg-white lg:w-1/2 lg:m-4 p-1 border-l-4 border-bleu shadow-lg rounded-lg">
-                <div>
-                    <div class="text-xl font-semibold">Premier contact</div>
-                    <div class="mt-2 ">
-                        <div class="my-2">Un premier entretien GRATUIT permettra de dresser un tableau de la situation
-                            actuelle, une prise de contact durant laquelle chacun sera amené à s'exprimer.</div>
-
-                        <div class="my-2">Si vous prenez la décision de travailler ensemble pour enclencher un
-                            changement dans votre vie familiale, un bilan de situation et un projet d'accompagnement
-                            personnalisé seront alors établis.</div>
-
-                        <div class="my-2">
-                            Il est à noter que mon intervention peut s'arrêter à tout moment :
-                            <ul class="list-disc list-inside mx-5">
-                                <li>Soit à votre demande</li>
-                                <li>Soit à la mienne</li>
-                                <li>Soit d'un commun accord</li>
-                            </ul>
-                        </div>
-                    </div>
+          <!-- Card -->
+          <div
+            class="rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:m-4 lg:w-1/2"
+          >
+            <div>
+              <div class="text-xl font-semibold">Premier contact</div>
+              <div class="mt-2">
+                <div class="my-2">
+                  Un premier entretien GRATUIT permettra de dresser un tableau
+                  de la situation actuelle, une prise de contact durant laquelle
+                  chacun sera amené à s'exprimer.
                 </div>
+
+                <div class="my-2">
+                  Si vous prenez la décision de travailler ensemble pour
+                  enclencher un changement dans votre vie familiale, un bilan de
+                  situation et un projet d'accompagnement personnalisé seront
+                  alors établis.
+                </div>
+
+                <div class="my-2">
+                  Il est à noter que mon intervention peut s'arrêter à tout
+                  moment :
+                  <ul class="mx-5 list-inside list-disc">
+                    <li>Soit à votre demande</li>
+                    <li>Soit à la mienne</li>
+                    <li>Soit d'un commun accord</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <!-- Card 2 -->
-            <div class="my-5 bg-white lg:w-1/2 lg:m-4 p-1 border-l-4 border-bleu  shadow-lg rounded-lg">
-                <div>
-                    <div class="text-xl font-semibold">Intervention libérale à domicile</div>
-                    <div class="my-2">L'intervention se déroule à votre domicile, en prenant en compte vos
-                        disponibilités et votre rythme de vie.</div>
-                    <div class="my-2">Cela se déroule sous forme d'entretiens individuels et familiaux, il suffit, en
-                        règle générale, d'une seule rencontre pour identifier la problématique familiale.</div>
-                </div>
+          <!-- Card 2 -->
+          <div
+            class="my-5 rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:m-4 lg:w-1/2"
+          >
+            <div>
+              <div class="text-xl font-semibold">
+                Intervention libérale à domicile
+              </div>
+              <div class="my-2">
+                L'intervention se déroule à votre domicile, en prenant en compte
+                vos disponibilités et votre rythme de vie.
+              </div>
+              <div class="my-2">
+                Cela se déroule sous forme d'entretiens individuels et
+                familiaux, il suffit, en règle générale, d'une seule rencontre
+                pour identifier la problématique familiale.
+              </div>
             </div>
+          </div>
         </div>
-        </div>
+      </div>
 
-        <div id="Apropos">
-            <h2 class="titre">Qui suis-je ?</h2>
-            <div class="flex flex-col justify-center lg:flex-row lg:justify-start">
-                <!-- pas sur que ça soit nécessaire -->
+      <div id="Apropos">
+        <h2 class="titre">Qui suis-je ?</h2>
+        <div class="flex flex-col justify-center lg:flex-row lg:justify-start">
+          <!-- pas sur que ça soit nécessaire -->
 
-                <div class="flex flex-col justify-center items-center lg:hidden">
-                    <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white shadow-lg"
-                        src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
-                    <div class="w-1/4 h-1 bg-bleu"></div>
-                </div>
+          <div class="flex flex-col items-center justify-center lg:hidden">
+            <img
+              class="m-2 flex h-72 w-72 justify-center rounded-full bg-white object-cover p-2 shadow-lg"
+              src="pp_detoure_square.png"
+              alt="Nathalie Saint-Charles"
+            />
+            <div class="h-1 w-1/4 bg-bleu"></div>
+          </div>
 
-                <!-- Card -->
-                <div
-                    class="bg-white lg:w-1/2 lg:m-4 p-1 border-l-4 border-bleu lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div>
-                        <div class="text-gray-800 text-xl font-semibold flex items-center justify-center flex-col mb-1">
-                            <span>Nathalie Saint-Charles</span>
-                            <span>Consultante éducative à domicile</span>
-                            <span>(Diplômée Éducatrice Spécialisée)</span>
-                        </div>
-                        <ul class="list-disc list-inside mx-10 text-lg">
-                            <li class="">Expérience dans l'accompagnement des parents et de leur enfant présentant des troubles du comportement (TED) (en SESSAD).</li>
-                            <li class="">Compétences en pédopsychiatrie (en hôpital de jour) accueillant des enfants âgés de 3 à 12 ans autistes, TSA et/ou TED.</li>
-                            <li class="">Sensibilisation à la thérapie familiale psychanalytique.</li>
-                            <li class="">Spécialisation en aide et soutien scolaire.</li>
-                            <li class="">Formation Snoezelen</li>
-                            <li class="">Psychothérapie institutionnelle.</li>
-                            <li class="">Gestion du stress, de l'agressivité et de la violence.</li>
-                            <li class="">Autisme et troubles envahissant du développement (TED).</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Photo big screen -->
-                <div class="hidden lg:flex justify-center items-center">
-                    <div class="w-1 h-56 bg-bleu"></div>
-                    <img class="flex justify-center rounded-full w-72 h-72 object-cover m-2 p-2 bg-white shadow-lg"
-                        src="pp_detoure_square.png" alt="Nathalie Saint-Charles">
-                </div>
-
+          <!-- Card -->
+          <div
+            class="rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:m-4 lg:flex lg:w-1/2 lg:flex-col lg:justify-center"
+          >
+            <div>
+              <div
+                class="mb-1 flex flex-col items-center justify-center text-xl font-semibold text-gray-800"
+              >
+                <span>Nathalie Saint-Charles</span>
+                <span>Consultante éducative à domicile</span>
+                <span>(Diplômée Éducatrice Spécialisée)</span>
+              </div>
+              <ul class="mx-10 list-inside list-disc text-lg">
+                <li class="">
+                  Expérience dans l'accompagnement des parents et de leur enfant
+                  présentant des troubles du comportement (TED) (en SESSAD).
+                </li>
+                <li class="">
+                  Compétences en pédopsychiatrie (en hôpital de jour)
+                  accueillant des enfants âgés de 3 à 12 ans autistes, TSA et/ou
+                  TED.
+                </li>
+                <li class="">
+                  Sensibilisation à la thérapie familiale psychanalytique.
+                </li>
+                <li class="">Spécialisation en aide et soutien scolaire.</li>
+                <li class="">Formation Snoezelen</li>
+                <li class="">Psychothérapie institutionnelle.</li>
+                <li class="">
+                  Gestion du stress, de l'agressivité et de la violence.
+                </li>
+                <li class="">
+                  Autisme et troubles envahissant du développement (TED).
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Photo big screen -->
+          <div class="hidden items-center justify-center lg:flex">
+            <div class="h-56 w-1 bg-bleu"></div>
+            <img
+              class="m-2 flex h-72 w-72 justify-center rounded-full bg-white object-cover p-2 shadow-lg"
+              src="pp_detoure_square.png"
+              alt="Nathalie Saint-Charles"
+            />
+          </div>
         </div>
+      </div>
 
-        <div id="Prestations">
-            <h2 class="titre ">Prestations</h2>
-            <div class="lg:m-1 lg:pt-8 lg:grid lg:grid-cols-3 lg:gap-5">
-
-                <!-- Card 1  -->
-                <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
-                    <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hands-helping"></i></span>
-                    </div>
-                    <div>
-                        <div class="text-xl font-semibold">Soutien et Guidance</div>
-                        <div class="mt-2 ">Vous cherchez des réponses ? Un regard extérieur sur la situation que vous
-                            vivez ? <br>
-                            Grâce à mes connaissances en matière éducative, pédagogique, et à une sensibilité à
-                            l'analyse des situations (avec une notion d'empathie importante), il sera alors possible de
-                            trouver ensemble des solutions accompagné par une professionnelle compétente. <br>
-                            Les bénéficiaires de ces interventions peuvent être l'enfant, la fratrie, la famille, le
-                            parent séparé, la famille recomposée.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
-                    <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-tasks"></i></span>
-                    </div>
-                    <div>
-                        <div class="text-xl font-semibold">Garde d'enfants</div>
-                        <div class="mt-2 ">Mes services peuvent être aussi vous permettre de trouver du temps pour vous.
-                            <br>
-                            Si vous éprouvez des difficultés pour faire garder votre enfant (porteur d'un handicap ou
-                            pour toute autre raison), que vous ayez besoin de moments pour diverses occupations
-                            (rendez-vous médical ou autre…) Vous pouvez me solliciter car cela fait partie de mes
-                            missions.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
-                    <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
-                    </div>
-                    <div>
-                        <div class="text-xl font-semibold">Accompagnement Scolaire</div>
-                        <div class="mt-2 ">Apporter des techniques éducatives afin de pouvoir accompagner votre enfant
-                            dans ses difficultés scolaires relève de mes compétences.</div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
-                    <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hands"></i></span>
-                    </div>
-                    <div>
-                        <div class="text-xl font-semibold">Communication et Relation à l'autre</div>
-                        <div class="mt-2 ">Vous rencontrez des problèmes de communication avec votre enfant
-                            adolescent ? <br>
-                            Vous avez l'impression de ne plus vous comprendre ? <br>
-                            Ce qui s'exprime entre vous verbalement vous fait ressentir généralement colère et tension ?
-                            <br>
-                            À partir d'échanges et de réflexions ensemble nous pouvons travailler pour rétablir une
-                            relation et une communication plus saine et sereine.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="py-4 px-8 shadow-lg rounded-lg lg:my-5 my-20 bg-white">
-                    <div class="flex justify-center lg:justify-start -mt-16">
-                        <span class="icon-bubble"><i class="fas fa-hand-holding-heart"></i></span>
-                    </div>
-                    <div>
-                        <div class="text-xl font-semibold">Il manque quelque chose ? Un doute ?</div>
-                        <div class="mt-2  flex justify-between items-center">On peut toujours en parler !
-                        </div>
-                        <a class="m-0" href="#Contact">
-                            <button type="button" class="ml-0 m-3 focus:outline-none text-white text-sm py-2.5 px-5 font-semibold rounded-md bg-gray-700 hover:bg-blue-600 hover:shadow-lg flex items-center">
-                                <i class="far fa-comment-dots mr-1"></i>
-                                Contactez moi
-                            </button>
-                        </a>
-                    </div>
-                </div>
+      <div id="Prestations">
+        <h2 class="titre">Prestations</h2>
+        <div class="lg:m-1 lg:grid lg:grid-cols-3 lg:gap-5 lg:pt-8">
+          <!-- Card 1  -->
+          <div class="my-20 rounded-lg bg-white px-8 py-4 shadow-lg lg:my-5">
+            <div class="-mt-16 flex justify-center lg:justify-start">
+              <span class="icon-bubble"
+                ><i class="fas fa-hands-helping"></i
+              ></span>
             </div>
+            <div>
+              <div class="text-xl font-semibold">Soutien et Guidance</div>
+              <div class="mt-2">
+                Vous cherchez des réponses ? Un regard extérieur sur la
+                situation que vous vivez ? <br />
+                Grâce à mes connaissances en matière éducative, pédagogique, et
+                à une sensibilité à l'analyse des situations (avec une notion
+                d'empathie importante), il sera alors possible de trouver
+                ensemble des solutions accompagné par une professionnelle
+                compétente. <br />
+                Les bénéficiaires de ces interventions peuvent être l'enfant, la
+                fratrie, la famille, le parent séparé, la famille recomposée.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="my-20 rounded-lg bg-white px-8 py-4 shadow-lg lg:my-5">
+            <div class="-mt-16 flex justify-center lg:justify-start">
+              <span class="icon-bubble"><i class="fas fa-tasks"></i></span>
+            </div>
+            <div>
+              <div class="text-xl font-semibold">Garde d'enfants</div>
+              <div class="mt-2">
+                Mes services peuvent être aussi vous permettre de trouver du
+                temps pour vous.
+                <br />
+                Si vous éprouvez des difficultés pour faire garder votre enfant
+                (porteur d'un handicap ou pour toute autre raison), que vous
+                ayez besoin de moments pour diverses occupations (rendez-vous
+                médical ou autre…) Vous pouvez me solliciter car cela fait
+                partie de mes missions.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="my-20 rounded-lg bg-white px-8 py-4 shadow-lg lg:my-5">
+            <div class="-mt-16 flex justify-center lg:justify-start">
+              <span class="icon-bubble"
+                ><i class="fas fa-hand-holding-heart"></i
+              ></span>
+            </div>
+            <div>
+              <div class="text-xl font-semibold">Accompagnement Scolaire</div>
+              <div class="mt-2">
+                Apporter des techniques éducatives afin de pouvoir accompagner
+                votre enfant dans ses difficultés scolaires relève de mes
+                compétences.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="my-20 rounded-lg bg-white px-8 py-4 shadow-lg lg:my-5">
+            <div class="-mt-16 flex justify-center lg:justify-start">
+              <span class="icon-bubble"><i class="fas fa-hands"></i></span>
+            </div>
+            <div>
+              <div class="text-xl font-semibold">
+                Communication et Relation à l'autre
+              </div>
+              <div class="mt-2">
+                Vous rencontrez des problèmes de communication avec votre enfant
+                adolescent ? <br />
+                Vous avez l'impression de ne plus vous comprendre ? <br />
+                Ce qui s'exprime entre vous verbalement vous fait ressentir
+                généralement colère et tension ?
+                <br />
+                À partir d'échanges et de réflexions ensemble nous pouvons
+                travailler pour rétablir une relation et une communication plus
+                saine et sereine.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="my-20 rounded-lg bg-white px-8 py-4 shadow-lg lg:my-5">
+            <div class="-mt-16 flex justify-center lg:justify-start">
+              <span class="icon-bubble"
+                ><i class="fas fa-hand-holding-heart"></i
+              ></span>
+            </div>
+            <div>
+              <div class="text-xl font-semibold">
+                Il manque quelque chose ? Un doute ?
+              </div>
+              <div class="mt-2 flex items-center justify-between">
+                On peut toujours en parler !
+              </div>
+              <a class="m-0" href="#Contact">
+                <button
+                  type="button"
+                  class="m-3 ml-0 flex items-center rounded-md bg-gray-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-600 hover:shadow-lg focus:outline-none"
+                >
+                  <i class="far fa-comment-dots mr-1"></i>
+                  Contactez moi
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Deontologie">
+        <h2 class="titre">La déontologie</h2>
+
+        <div class="my-3 text-lg">
+          Elle se définie suivant des mots clefs comme :
         </div>
 
-        <div id="Deontologie">
-            <h2 class="titre">La déontologie</h2>
+        <div class="lg:grid lg:grid-cols-3">
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4">
+              <div class="text-xl font-semibold">Compétences multiples</div>
+              Au cours de ma carrière j'ai pu développer un
+              <strong>réseau partenarial</strong>
+              pluridisciplinaire afin de bénéficier des compétences multiples,
+              nécessaire à la réflexion de problématiques spécifiques.
+            </div>
+          </div>
 
-            <div class="text-lg my-3">Elle se définie suivant des mots clefs comme :</div>
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4">
+              <div class="text-xl font-semibold">Analyse</div>
+              Je m'engage à fournir une
+              <strong>attention particulière</strong> à chaque bénéficiaire de
+              l'accompagnement dans les termes d'une écoute attentive, d'une
+              analyse globale et objective de la situation, de propositions
+              adaptées, de conseiller ou d'orienter le bénéficiaire afin de
+              répondre aux demandes spécifiques de celui-ci.
+            </div>
+          </div>
 
-            <div class="lg:grid lg:grid-cols-3">
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4">
+              <div class="text-xl font-semibold">Principes</div>
+              Une <strong>écoute attentive</strong> permettra d'établir une
+              <strong>relation de confiance</strong> pour une
+              <strong>démarche de qualité</strong>.
+            </div>
+          </div>
 
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4">
-                        <div class="font-semibold text-xl">Compétences multiples</div>
-                        Au cours de ma carrière j'ai pu développer un <strong>réseau partenarial</strong>
-                        pluridisciplinaire afin de
-                        bénéficier des compétences multiples, nécessaire à la réflexion de problématiques spécifiques.
-                    </div>
-                </div>
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4">
+              <div class="text-xl font-semibold">Confidentialité</div>
+              L'intervention est à la demande de la famille, il y a donc par
+              conséquent une <strong>obligation de confidentialité</strong> des
+              éléments recueillis au sein de celle-ci, dans un climat de
+              transparence et de non jugement. Notamment en matière de respect
+              du lieu de vie, du choix de vie et de la culture, de l'intimité
+              des familles que j'accompagne.
+            </div>
+          </div>
 
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4">
-                        <div class="font-semibold text-xl">Analyse </div>
-                        Je m'engage à fournir une <strong>attention particulière</strong> à chaque bénéficiaire de
-                        l'accompagnement dans les termes d'une écoute attentive, d'une analyse globale et objective de
-                        la situation, de propositions adaptées, de conseiller ou d'orienter le bénéficiaire afin de
-                        répondre aux demandes spécifiques de celui-ci.
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4">
-                        <div class="font-semibold text-xl">Principes</div>
-                        Une <strong>écoute attentive</strong> permettra d'établir une <strong>relation de
-                            confiance</strong> pour une <strong>démarche de qualité</strong>.
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4">
-                        <div class="font-semibold text-xl">Confidentialité</div>
-                        L'intervention est à la demande de la famille, il y a donc par conséquent une <strong>obligation
-                            de confidentialité</strong> des éléments recueillis au sein de celle-ci, dans un climat de
-                        transparence et
-                        de non jugement. Notamment en matière de respect du lieu de vie, du choix de vie et de la
-                        culture, de l'intimité des familles que j'accompagne.
-                    </div>
-                </div>
-
-                <!-- <div
+          <!-- <div
                     class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
                     <div class="m-4">
                         <div class="font-semibold text-xl"></div>
@@ -325,108 +449,143 @@
                     </div>
                 </div> -->
 
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4">
-                        <div class="font-semibold text-xl"></div>
-                        <ul class="list-inside list-disc ">
-                            <li>Mon intervention est dans un <strong>cadre préventif</strong> et en complémentarité des
-                                <strong>dispositifs existants</strong>, il ne peut se substituer à eux.</li>
-                            <li>Mes actions interviennent dans un cadre de <strong>« coéducation »</strong> avec les
-                                familles. Il ne peut en aucun cas se substituer aux détenteurs de l'autorité parentale.
-                            </li>
-                            <li>J'interviens dans le <strong>respect des codes</strong> ; pénal, civil, des droits de la
-                                famille et des droits de l'enfant.</li>
-                        </ul>
-                    </div>
-                </div>
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4">
+              <div class="text-xl font-semibold"></div>
+              <ul class="list-inside list-disc">
+                <li>
+                  Mon intervention est dans un
+                  <strong>cadre préventif</strong> et en complémentarité des
+                  <strong>dispositifs existants</strong>, il ne peut se
+                  substituer à eux.
+                </li>
+                <li>
+                  Mes actions interviennent dans un cadre de
+                  <strong>« coéducation »</strong> avec les familles. Il ne peut
+                  en aucun cas se substituer aux détenteurs de l'autorité
+                  parentale.
+                </li>
+                <li>
+                  J'interviens dans le <strong>respect des codes</strong> ;
+                  pénal, civil, des droits de la famille et des droits de
+                  l'enfant.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div id="Paiement">
+        <div class="titre">Paiement</div>
+        <div class="flex flex-col lg:flex-row">
+          <div class="flex-col justify-evenly lg:flex">
+            <!-- CARD -->
+            <div
+              class="my-3 rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:w-full lg:flex-col lg:justify-center"
+            >
+              <div>
+                <div class="text-xl">Possibilité de paiement par :</div>
+                <ul class="mx-10 list-inside list-disc text-lg">
+                  <li>CESU (Chèque Emploi Service Universel).</li>
+                  <li>Possibilité de crédit ou réduction d'impôt.</li>
+                  <li>Chèque - Espèce.</li>
+                  <li>Possibilité d'aide financée par la MDPH.</li>
+                </ul>
+              </div>
             </div>
 
-        </div>
-
-        <div id="Paiement">
-            <div class="titre">Paiement</div>
-            <div class="flex flex-col lg:flex-row">
-                <div class="lg:flex flex-col justify-evenly">
-                    <!-- CARD -->
-                    <div
-                        class="bg-white my-3 lg:w-full p-1 border-l-4 border-bleu lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                        <div>
-                            <div class="text-xl">
-                                Possibilité de paiement par :
-                            </div>
-                            <ul class="list-disc list-inside mx-10 text-lg">
-                                <li>CESU (Chèque Emploi Service Universel).</li>
-                                <li>Possibilité de crédit ou réduction d'impôt.</li>
-                                <li>Chèque - Espèce.</li>
-                                <li>Possibilité d'aide financée par la MDPH.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Card2 -->
-                    <div
-                        class="bg-white my-3 lg:w-full p-1 border-l-4 border-bleu lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                        <div class="text-lg">
-                            Uniquement sur RDV à domicile sur le secteur Sambre-Avesnois du Lundi au Samedi.
-                        </div>
-                    </div>
-                </div>
-
-                <img class="lg:w-1/3 lg:mx-20" src="family.png" alt="Dessin d'une famille">
+            <!-- Card2 -->
+            <div
+              class="my-3 rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:w-full lg:flex-col lg:justify-center"
+            >
+              <div class="text-lg">
+                Uniquement sur RDV à domicile sur le secteur Sambre-Avesnois du
+                Lundi au Samedi.
+              </div>
             </div>
+          </div>
+
+          <img
+            class="lg:mx-20 lg:w-1/3"
+            src="family.png"
+            alt="Dessin d'une famille"
+          />
         </div>
+      </div>
 
-        <div id="Contact">
-            <div class="titre">Contactez moi</div>
+      <div id="Contact">
+        <div class="titre">Contactez moi</div>
 
-            <div class="lg:grid lg:grid-cols-3 text-lg">
-                <!-- TELEPHONE -->
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4 text-xl flex items-center">
-                        <span class="text-vert text-5xl mx-2"><i class="fas fa-phone-square-alt"></i></span>
-                        <span>Par téléphone: <a class="border-b-2 border-dashed" href="tel:+336-19-43-09-69">+33 6-19-43-09-69</a></span>
-                        <button type="button" class="button" id="clip">
-                            <i class="far fa-clipboard"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- MAIL -->
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="m-4 text-xl flex items-center">
-                        <span class="text-vert text-5xl mx-2"><i class="fas fa-envelope-square"></i></span>
-                        <div>Par mail: <a class="border-b-2 border-dashed"
-                                href="mailto:pro.saint-charles.nathalie@orange.fr">pro.saint-charles.nathalie@orange.fr</a>
-                        </div>
-                        <button type="button" class="button" id="clip">
-                            <i class="far fa-clipboard"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- LinkedIn -->
-                <div
-                    class="bg-white m-4 p-1 border-l-4  border-bleu h-min lg:flex lg:flex-col lg:justify-center shadow-lg rounded-lg">
-                    <div class="">
-                        <a class="m-4 text-xl flex items-center" href="https://www.linkedin.com/in/nathalie-saint-charles/">
-                        <span class="text-vert text-5xl mx-2"><i class="fab fa-linkedin"></i></span>
-                        <div>Sur LinkedIn</div>
-                            <button type="button" class="button">
-                                <i class="fab fa-linkedin"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+        <div class="text-lg lg:grid lg:grid-cols-3">
+          <!-- TELEPHONE -->
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4 flex items-center text-xl">
+              <span class="mx-2 text-5xl text-vert"
+                ><i class="fas fa-phone-square-alt"></i
+              ></span>
+              <span
+                >Par téléphone:
+                <a class="border-b-2 border-dashed" href="tel:+336-19-43-09-69"
+                  >+33 6-19-43-09-69</a
+                ></span
+              >
+              <button type="button" class="button" id="clip">
+                <i class="far fa-clipboard"></i>
+              </button>
             </div>
-        </div>
+          </div>
 
-        <!-- fin body     -->
+          <!-- MAIL -->
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="m-4 flex items-center text-xl">
+              <span class="mx-2 text-5xl text-vert"
+                ><i class="fas fa-envelope-square"></i
+              ></span>
+              <div>
+                Par mail:
+                <a
+                  class="border-b-2 border-dashed"
+                  href="mailto:pro.saint-charles.nathalie@orange.fr"
+                  >pro.saint-charles.nathalie@orange.fr</a
+                >
+              </div>
+              <button type="button" class="button" id="clip">
+                <i class="far fa-clipboard"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div
+            class="m-4 h-min rounded-lg border-l-4 border-bleu bg-white p-1 shadow-lg lg:flex lg:flex-col lg:justify-center"
+          >
+            <div class="">
+              <a
+                class="m-4 flex items-center text-xl"
+                href="https://www.linkedin.com/in/nathalie-saint-charles/"
+              >
+                <span class="mx-2 text-5xl text-vert"
+                  ><i class="fab fa-linkedin"></i
+                ></span>
+                <div>Sur LinkedIn</div>
+                <button type="button" class="button">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fin body     -->
     </div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
